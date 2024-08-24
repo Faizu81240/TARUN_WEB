@@ -1,0 +1,408 @@
+/* BACKGROUND STARTS */
+
+.background {
+    filter: blur(100px);
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    scale: 1.1;
+}
+
+.background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* BACKGROUND ENDS */
+
+/* NAVIGATION STARTS */
+
+.nav {
+    height: 100px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+.nav-links ul li {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 24px;
+
+
+    list-style: none;
+    padding-left: 40px;
+}
+
+.nav-links ul li a {
+    color: white;
+    opacity: 70%;
+    transition-property: opacity;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    text-decoration: none;
+}
+
+.nav-links ul li a:hover {
+    opacity: 100%;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.541));
+    transition: opacity 200ms;
+}
+
+/* NAVIGATION STOPS */
+
+/* HERO STARTS */
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.hero-content {
+    width: 500px;
+    margin: 50px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hero-hi {
+    color: white;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 2px;
+}
+
+.hero-name {
+    color: white;
+    font-family: Poppins;
+    color: #2edbef;
+    font-weight: 700;
+    font-size: 64px;
+}
+
+.hero-description {
+    color: white;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 2px;
+}
+
+.hero-img {
+    margin: 0px 50px 50px 50px;
+    width: 450px;
+    height: 450px;
+    object-fit: contain;
+    border-radius: 30px;
+}
+
+/* HERO ENDS */
+
+/* EXPERTISE STARTS */
+
+.expertise-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.card-title {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.line {
+    border: 1px solid gray;
+    width: 360px;
+    size: 2;
+    margin-left: 16px;
+    margin-right: 16px;
+    color: gray;
+
+}
+
+.card-name {
+    font-family: Poppins;
+    font-weight: 500;
+    color: #2edbef;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.vertical-line {
+    transform: rotate(90deg);
+    width: 60px;
+    size: 1;
+    border: 1px solid #2edbef;
+    color: #2edbef;
+    border-radius: 30px;
+    stroke: none;
+    margin: 24px;
+}
+
+.ex-card {
+    width: 85%;
+    height: auto;
+    /* background-color: rgba(49, 54, 63, 0.4); */
+    border-radius: 30px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: contain;
+    padding: 20px 40px;
+}
+
+.card-img {
+    height: 88px;
+    width: 88px;
+    object-fit: contain;
+
+}
+
+.linux,
+.react,
+.python,
+.networking,
+.full-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ex-text {
+    text-align: center;
+    font-family: Poppins;
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin-top: 18px;
+    color: #E0AECF;
+}
+
+/* EXPERTISE ENDS */
+
+/* PROJECT STARTS */
+
+.project-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.projects-cards {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.card-project {
+    font-family: Poppins;
+    width: 35%;
+    height: auto;
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: rgba(49, 54, 63, 0.4);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.project-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.project-name {
+    color: white;
+    font-weight: 700;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    font-size: 40px;
+    text-align: left;
+}
+
+.project-thumnail {
+    width: 100%;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.project-description {
+    color: rgb(206, 206, 206);
+    font-weight: 300;
+    margin-top: .5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: justify;
+}
+
+.project-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.git-hub {
+    width: 60px;
+    height: 108px;
+    object-fit: contain;
+}
+
+.see-more {
+    height: 50px;
+    font-family: Poppins;
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border-radius: 30px;
+    border-style: solid;
+    border-color: #2edbef;
+    padding: 0px 16px;
+    cursor: pointer;
+}
+
+.see-more:hover {
+    scale: 1.02;
+    transition: scale 150ms;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.541));
+}
+
+.git-hub:hover {
+    scale: 1.02;
+    transition: scale 150ms;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.541));
+}
+
+/* PROJECT ENDS */
+
+/* FOOTER STARTS */
+
+.footer {
+    width: 100%;
+}
+
+.footer-break {
+    border-color: grey;
+    background-color: grey;
+}
+
+.footer-content {
+    padding: 10px 20px;
+    display: flex;
+}
+
+.tarun {
+    font-family: Fira Code;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 2px;
+    margin: 10px 0px;
+}
+
+.tarun-description {
+    font-family: Fira Code;
+    font-size: 16px;
+    font-weight: 400;
+    color: grey;
+    width: 40%;
+    margin: 10px 0px;
+}
+
+.logos {
+    margin: 20px 0px;
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logos-footer {
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
+    margin-right: 20px;
+}
+
+.footer-contact {
+    font-family: Fira Code;
+    font-size: 28px;
+    font-weight: 500;
+    color: white;
+    margin: 10px 00px;
+}
+
+.tarun-contact {
+    font-family: Fira Code;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgb(202, 202, 202);
+    margin: 4px 0px;
+    text-align: end;
+
+}
+
+
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.footer-right a {
+    text-decoration: none;
+}
